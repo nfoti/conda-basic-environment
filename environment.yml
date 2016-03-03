@@ -1,0 +1,21 @@
+name: conda-basic
+channels:
+    - r
+dependencies:
+    - python=2.7
+    - numpy
+    - scipy
+    - cython
+    - ipython
+    - jupyter
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - statsmodels
+    - docopt
+    - rpy2 # Use this version from the r channel so that it works
+    - r-ggplot2
+    - r-dplyr
+    - pip:
+        - "git+https://github.com/pygridtools/gridmap.git#egg=gridmap"
+        - ipdb
