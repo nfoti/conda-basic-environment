@@ -18,4 +18,9 @@ dependencies:
     - r-dplyr
     - pip:
         - "git+https://github.com/pygridtools/gridmap.git#egg=gridmap"
+      # Can also install your own packages from a remote repo:
+        #- "--editable=git+ssh://github.com/USERNAME/REPONAME.git@COMMIT#egg=REPONAME"
+        # The --editable flag is important in order to get `pip freeze` to tell
+        # you the COMMIT hash. Can also put branches and tags for COMMIT, but
+        # for reproducibility best to use COMMIT hashes.
         - ipdb
